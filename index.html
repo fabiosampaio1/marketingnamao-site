@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing na Mão | Sua empresa crescendo agora · Victory Line</title>
+<meta name="description" content="Pare de perder vendas. Anúncios, marca e comercial funcionando juntos para sua empresa crescer agora. Fale com a Victory Line pelo WhatsApp.">
+<meta property="og:title" content="Marketing na Mão · Victory Line">
+<meta property="og:description" content="Sua empresa não pode esperar para crescer. Diagnóstico comercial e de marketing pelo WhatsApp.">
+<meta name="theme-color" content="#0C1424">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0C1424;--ink-2:#141E33;--ink-3:#0F192B;--paper:#ECEEF2;--head:#F4F5F7;--txt:#B4BCC9;--muted:#A3ACBA;--accent:#C29E62;--accent-2:#D4B37A;--line:rgba(236,238,242,.12);--display:'Cormorant Garamond',Georgia,serif;--body:'Montserrat',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--ink);color:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--ink);font-weight:600;font-size:15px;padding:15px 26px;border-radius:999px;transition:filter .2s}
+.btn:hover{filter:brightness(1.1)}
+.btn svg{width:18px;height:18px}
+.btn.lg{font-size:16.5px;padding:18px 32px}
+.btn.ghost{background:transparent;color:var(--paper);border:1.5px solid rgba(236,238,242,.25)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+/* top */
+.top{position:absolute;inset:0 0 auto;z-index:5}
+.top-in{display:flex;justify-content:space-between;align-items:center;height:76px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo b{font-family:var(--display);font-weight:700;font-size:22px;color:var(--head);letter-spacing:.01em}
+.logo b i{color:var(--accent);font-weight:600}
+.logo span{display:block;font-size:10px;letter-spacing:.24em;color:var(--muted);font-weight:600;margin-top:2px}
+.top .btn{padding:10px 18px;font-size:14px}
+/* hero */
+.hero{padding:150px 0 96px;position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 85% 10%,rgba(194,158,98,.10),transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--accent-2);border:1px solid rgba(194,158,98,.4);padding:7px 14px;border-radius:999px;margin-bottom:26px}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(194,158,98,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(194,158,98,0)}100%{box-shadow:0 0 0 0 rgba(194,158,98,0)}}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(42px,5.4vw,76px);line-height:1.02;color:var(--head);letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{font-size:18px;color:var(--txt);max-width:540px;margin:24px 0 36px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.note{font-size:13.5px;color:var(--muted);margin-top:18px}
+/* hero card */
+.card-hero{background:var(--ink-2);border:1px solid rgba(194,158,98,.35);border-radius:20px;padding:34px}
+.card-hero h3{font-family:var(--display);font-size:26px;font-weight:600;color:var(--head);margin-bottom:6px}
+.card-hero p{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+.meter{display:grid;gap:14px}
+.meter div{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:center;font-size:14px;color:var(--txt)}
+.bar{height:8px;border-radius:99px;background:rgba(236,238,242,.08);overflow:hidden}
+.bar b{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform-origin:left;animation:grow 1.6s cubic-bezier(.3,.7,.2,1) .4s both}
+@keyframes grow{from{transform:scaleX(0)}}
+.card-hero small{display:block;margin-top:22px;font-size:12.5px;color:var(--muted)}
+/* pain */
+section{padding:92px 0}
+.h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,3.4vw,46px);line-height:1.1;color:var(--head);max-width:22ch}
+.sub{color:var(--txt);font-size:16.5px;max-width:560px;margin-top:16px}
+.pain{background:var(--ink-3);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.pain-item{border:1px solid var(--line);border-radius:14px;padding:24px}
+.pain-item b{display:block;font-size:16px;color:var(--head);font-weight:600;margin-bottom:6px}
+.pain-item span{font-size:14.5px;color:var(--muted)}
+.pain-item .x{width:30px;height:30px;border-radius:50%;border:1.5px solid rgba(236,238,242,.25);display:grid;place-items:center;margin-bottom:16px;color:var(--muted);font-size:15px}
+.pain-cta{margin-top:40px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.pain-cta p{font-family:var(--display);font-style:italic;font-size:24px;color:var(--accent)}
+/* solution */
+.sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.sol{background:var(--ink-2);border-radius:18px;padding:32px;border:1px solid var(--line);position:relative}
+.sol .tag{font-size:12.5px;font-weight:600;color:var(--accent);letter-spacing:.06em}
+.sol h3{font-family:var(--display);font-size:30px;font-weight:600;color:var(--head);margin:6px 0 12px}
+.sol p{font-size:15px;color:var(--txt);margin-bottom:18px}
+.sol ul{list-style:none;display:grid;gap:8px}
+.sol li{font-size:14.5px;color:var(--muted);padding-left:22px;position:relative}
+.sol li::before{content:"";position:absolute;left:2px;top:7px;width:10px;height:6px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;counter-reset:s}
+.step{border-top:2px solid rgba(194,158,98,.5);padding-top:22px}
+.step::before{counter-increment:s;content:"Passo " counter(s);font-size:13px;font-weight:600;color:var(--accent)}
+.step h3{font-family:var(--display);font-size:26px;font-weight:600;color:var(--head);margin:6px 0 8px}
+.step p{font-size:15px;color:var(--txt)}
+/* final */
+.final{padding:0 0 96px}
+.final-box{background:linear-gradient(135deg,#1A2640,#141E33);border:1px solid rgba(194,158,98,.5);border-radius:24px;padding:clamp(40px,6vw,72px);text-align:center}
+.final-box .h2{margin:0 auto;max-width:18ch}
+.final-box .sub{margin:18px auto 34px}
+.final-box .phone{display:block;margin-top:16px;color:var(--muted);font-size:14.5px}
+/* footer */
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:13.5px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.foot a{color:var(--accent-2)}
+.foot a:hover{text-decoration:underline}
+/* float */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px -6px rgba(0,0,0,.5)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+/* sticky mobile cta */
+.m-cta{display:none}
+@media (max-width:960px){
+ .hero-grid{grid-template-columns:1fr}
+ .pain-grid{grid-template-columns:1fr 1fr}
+ .sol-grid,.steps{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+ .hero{padding:120px 0 72px}
+ section{padding:72px 0}
+ .pain-grid{grid-template-columns:1fr}
+ .top .btn span{display:none}
+ .wa-float{display:none}
+ .m-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;justify-content:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.6)}
+ footer{padding-bottom:90px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap top-in">
+  <a href="#" class="logo" aria-label="Marketing na Mão">
+   <svg width="36" height="36" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#141E33"/><path d="M12 18 L27 46 L50 14" fill="none" stroke="#C29E62" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="14" r="5" fill="#F2F2F0"/></svg>
+   <div><b>Marketing <i>na Mão</i></b><span>BY VICTORY LINE</span></div>
+  </a>
+  <a class="btn wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Falar agora</span></a>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="pill"><i></i>Atendimento online para todo o Brasil</span>
+   <h1>Sua empresa não pode esperar para <em>crescer.</em></h1>
+   <p class="lead">Enquanto você pensa, o concorrente anuncia, atende e fecha. O Marketing na Mão coloca anúncios, marca e comercial trabalhando juntos para sua empresa vender mais, começando agora.</p>
+   <div class="hero-ctas">
+    <a class="btn lg wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Quero crescer agora</a>
+    <a class="btn ghost" href="#como">Como funciona</a>
+   </div>
+   <p class="note">Resposta direta no WhatsApp com um especialista da Victory Line.</p>
+  </div>
+  <aside class="card-hero" aria-label="O que o Marketing na Mão organiza">
+   <h3>O que entra em movimento</h3>
+   <p>Tudo o que faz uma empresa vender, conectado num só plano.</p>
+   <div class="meter">
+    <div>Anúncios<span class="bar"><b style="width:92%"></b></span></div>
+    <div>Marca<span class="bar"><b style="width:78%"></b></span></div>
+    <div>Atendimento<span class="bar"><b style="width:86%"></b></span></div>
+    <div>CRM e funil<span class="bar"><b style="width:82%"></b></span></div>
+    <div>Equipe<span class="bar"><b style="width:74%"></b></span></div>
+   </div>
+   <small>Ilustrativo: cada frente é ajustada à realidade da sua empresa no diagnóstico.</small>
+  </aside>
+ </div>
+</section>
+
+<section class="pain">
+ <div class="wrap">
+  <h2 class="h2">Se algum desses é o seu caso, você está perdendo vendas hoje.</h2>
+  <div class="pain-grid">
+   <div class="pain-item"><div class="x">✕</div><b>Posta, mas não vende</b><span>Redes sociais ativas, mas o seguidor não vira cliente.</span></div>
+   <div class="pain-item"><div class="x">✕</div><b>Anúncio caro, retorno baixo</b><span>Investe em tráfego e não sabe o que realmente traz venda.</span></div>
+   <div class="pain-item"><div class="x">✕</div><b>Contatos esquecidos</b><span>Leads chegam no WhatsApp e somem sem resposta ou acompanhamento.</span></div>
+   <div class="pain-item"><div class="x">✕</div><b>Equipe sem processo</b><span>Cada vendedor faz de um jeito, sem metas nem rotina clara.</span></div>
+  </div>
+  <div class="pain-cta">
+   <p>Cada semana parada é cliente indo para o concorrente.</p>
+   <a class="btn wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Resolver isso agora</a>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <h2 class="h2">Atrair, converter e crescer. Na sua mão.</h2>
+  <p class="sub">A Victory Line cuida das três frentes que fazem uma empresa crescer de verdade, e liga uma na outra.</p>
+  <div class="sol-grid">
+   <article class="sol"><span class="tag">ATRAIR</span><h3>Mais clientes chegando</h3><p>Anúncios e campanhas que levam as pessoas certas até você.</p><ul><li>Tráfego pago: Meta e Google</li><li>Campanhas e criativos</li><li>Posicionamento de marca</li></ul></article>
+   <article class="sol"><span class="tag">CONVERTER</span><h3>Mais contatos virando venda</h3><p>Processo para que nenhum lead se perca no caminho.</p><ul><li>Implantação de CRM</li><li>Funil e automações</li><li>Atendimento pelo WhatsApp</li></ul></article>
+   <article class="sol"><span class="tag">CRESCER</span><h3>Resultado que se repete</h3><p>Equipe preparada e números claros para escalar o que funciona.</p><ul><li>Treinamento de equipes</li><li>Metas e indicadores</li><li>Branding e estudo de marca</li></ul></article>
+  </div>
+ </div>
+</section>
+
+<section id="como" class="pain">
+ <div class="wrap">
+  <h2 class="h2">Comece em três passos.</h2>
+  <div class="steps">
+   <div class="step"><h3>Chame no WhatsApp</h3><p>Conte rapidamente sobre sua empresa e o que quer alcançar.</p></div>
+   <div class="step"><h3>Receba o diagnóstico</h3><p>Analisamos marketing e comercial e mostramos onde estão as vendas perdidas.</p></div>
+   <div class="step"><h3>Coloque em prática</h3><p>Plano de ação com prioridades claras, e a Victory Line executando junto com você.</p></div>
+  </div>
+ </div>
+</section>
+
+<section style="padding-top:92px" class="final">
+ <div class="wrap">
+  <div class="final-box">
+   <h2 class="h2">O melhor momento para crescer é agora.</h2>
+   <p class="sub">Fale com a Victory Line e agende seu diagnóstico comercial e de marketing.</p>
+   <a class="btn lg wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Quero meu diagnóstico</a>
+   <span class="phone">WhatsApp (51) 98936-0532</span>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap foot">
+  <span>Marketing na Mão é um serviço da <a href="https://victorylinemarketing.com.br">Victory Line Marketing</a></span>
+  <span>Victory Line Marketing Ltda · CNPJ 61.550.085/0001-76 · Rua Pedro Waine, 122 · Porto Alegre/RS</span>
+ </div>
+</footer>
+
+<a class="wa-float wa" href="#" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+<a class="btn m-cta wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Quero crescer agora</a>
+
+<script>
+var WA='https://wa.me/5551989360532?text='+encodeURIComponent('Olá! Vim pelo Marketing na Mão e quero fazer minha empresa crescer. Podemos conversar?');
+document.querySelectorAll('.wa').forEach(function(a){a.href=WA;a.target='_blank';a.rel='noopener'});
+</script>
+</body>
+</html>
